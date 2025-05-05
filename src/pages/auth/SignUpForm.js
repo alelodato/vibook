@@ -1,6 +1,7 @@
-
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+
+import signup from '../../assets/signup.webp'
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
@@ -126,11 +127,10 @@ const SignUpForm = () => {
       <Col
         md={6}
         className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"../assets/signup.webp"}
-        />
+      ><Image
+      className={`${appStyles.FillerImage}`}
+      src={signup}
+    />
       </Col>
     </Row>
   );
