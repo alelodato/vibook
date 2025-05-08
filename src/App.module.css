@@ -1,10 +1,14 @@
 
 .App {
     font-family: "Sour Gummy", sans-serif;
-    background-color: #f8f8f8;
+    background: radial-gradient(#191818, #312d2db8) center center/cover;
     min-height: 100vh;
 }
-  
+
+body {
+    background: url(../src/assets/background.webp.webp) no-repeat center center/cover;
+}
+
 .Main {
     padding-top: 81px;
 }
