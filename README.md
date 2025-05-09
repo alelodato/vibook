@@ -3,7 +3,7 @@
 
 ## Project description
 
-Vibook is a social media platform. It has been designed for its users to share their life's moments. The application consists of the React app and an API. Welcome to the React front end project section.
+Vibook is a social media platform. It has been designed for its users to share parties and venues. The application consists of the React app and an API. Welcome to the React front end project section.
 
 ## User stories
 
