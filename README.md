@@ -191,9 +191,8 @@ If the user wishes to sign out, once signed in, the sign out option becomes visi
 There are four main react components which make up the Home events page. 
 
 1. Popular Profiles Component
-2. Events posts
-3. Top Upcoming Events
-4. Search and Filter
+2. Users Posts
+3. Search and Filter
 
 ### Popular Profiles Component
 
@@ -201,8 +200,8 @@ The popular profiles component is a permanent feature across the entire site. It
 
 If the user isn't logged in, they can see avatar, and the username of the top 6 most popular profiles, and if the user is logged in, they will also see a button enabling them to follow or unfollow the profile. 
 
-![Popular Profiles - logged out](images/popular-profiles-loggedout.jpg)
-![Popular Profiles - logged in](images/popular-profiles-loggedin.jpg)
+![Popular Profiles - logged out]()
+![Popular Profiles - logged in]()
 
 If the follow button is greyed out, it is because your own profile has made it to the top 6 most popular profiles list, but you are not allowed to follow yourself. Originally, it was simply the case that no button appeared under your own profile but aesthetically, this didn't look good and the component didn't look balanced, so I decided to put an inactive button with a tooltip there instead. 
 
