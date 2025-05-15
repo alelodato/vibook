@@ -258,53 +258,21 @@ If the user is not logged in, they can read any comments that have been posted b
 
 * ## Profile Page
 
-Throughout the site, wherever you see profile avatars, albeit in the popular profiles component, or next to events, comments or reviews that have been published, you can click on the avatar to view the full profile page of that user. In the Navigation Bar, in the authentication dropdown, you can access your own profile page as well.  
-
-### Profile Stats
-
+Throughout the site, wherever you see profile avatars, albeit in the popular profiles component, or next to posts, comments or reviews that have been published, you can click on the avatar to view the full profile page of that user. In the Navigation Bar, in the authentication dropdown, you can access your own profile page as well.
 When a user signs up and creates a new site account, a basic profile is automatically created with a username, password and defauly avatar image. The only information that subsequently gets updated in the profile page is the site usage stats, as follows: 
 
-* Number of events the user has posted
-* Number of events the user has flagged as going
+* Number of posts the user has shared
 * Number of profiles they are following
 * Number of profiles that are following them
 
-There is an about container and a contact details container which remain empty until the user goes into their own profile page and clicks on the three dots dropdown to Edit the profile and add their personal details to the page. If they click on the Edit Profile option, they are taken to a new page containing the full profile details form to fill in and submit. Here, they can add their own avatar image, a name, bio, website address, instagram or facebook link, a telephone number and an email address. These are designed mainly to give event hosts the opportunity to publish additional contact information and social media links but of course all users are welcome to add as much or little personal info as they wish. 
+There is a bio container which remain empty until the user goes into their own profile page and clicks on the three dots dropdown to Edit the profile and add their personal details to the page. If they click on the Edit Profile option, they are taken to a new page containing the full profile details form to fill in and submit. This is designed mainly to give event hosts the opportunity to publish additional contact information and social media links but of course all users are welcome to add as much or little personal info as they wish.
+In the profile page, the user can see all his shared posts as well.
+Once these fields have been filled in, they can be seen by other users in the main profile page stats container.
+Each profile also has a follow button inside the stats container so that other users can click it to follow and unfollow the profile as all profiles won't always appear listed in the popular profiles component, to access the follow functionality there.
 
-![Profile Edit](images/profile-edit.jpg)
+![Porfile Page](./src/assets/readme/profilepage.png)
+![Profile Edit](./src/assets/readme/editprofile.png)
 
-Once these fields have been filled in, they can be seen by other users in the main profile page stats container. Any website links that are entered can be clicked on to open the website in a new browser tab. 
-
-Each profile also has a follow button inside the stats container so that other users can click it to follow and unfollow the profile as all profiles won't always appear listed in the popular profiles component, to access the follow functionality there. 
-
-![Profile Stats](images/profile-stats.jpg)
-
-### Profile Posts
-
-Below the profile stats you can see all the events posted by the profile you are viewing. Any of these can be clicked on to view the individual event detail page with comments if there are any. 
-
-* ## Contact
-
-At the top of the profile page, the user can still see the popular profiles component as a permanent feature across the site, but the top upcoming events component has been replaced by a messaging system component. On desktop devices the message component is visible on the right of popular profiles, but for tablet and mobile it moves into place between the popular profiles and the User Profile Stats. 
-
-If you are viewing someone else's profile, the message component contains a form to write a message and send it to the owner of the profile page you are viewing. 
-
-![Create Message](images/message-create.jpg)
-
-If you are viewing your own profile page the messaging component will display your own private message inbox. Other users will not be able to see the messages that have not been sent to them. All messages that have been sent to you, are displayed in descending order of when they were sent. You can see the avatar and the username of the sender, the date the message was sent, and the message itself. Each message has a 'reply' button if the user wants to send a reply message back to the sender. 
-
-![Received Messages](images/message-inbox.jpg)
-![Messages - Reply](images/message-reply.jpg)
-
-Unlike with other forms such as creating an event, comment or review, where you can see the published content once the form has been posted successfully, the user does not have access to other user's inboxes to check whether the message has been sent successfully or not. For this reason, in the case of the messaging component, I have set up an alert system using Bootstrap alerts, to display a success alert message when a message or a reply message have been sent successfully. This adds to good user experience, and user peace of mind. 
-
-![Message Alert](images/message-alert.jpg)
-
-Equally, if the user tries to send a blank message, they will see a Bootstrap warning message telling them that they must fill in the message field in order to send the message successfully. 
-
-![Message Alert](images/message-error.jpg)
-
-For the time being, there is no alert system in place to send a notification to a user when they receive a new message, but this is something I would like to look into in future development sprints.
 * ## Reusable React Components
 
 ### Three Dots Edit Delete Dropdown Menu
