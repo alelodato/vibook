@@ -272,33 +272,6 @@ Each profile also has a follow button inside the stats container so that other u
 ![Porfile Page](./src/assets/readme/profilepage.png)
 ![Profile Edit](./src/assets/readme/editprofile.png)
 
-## Tests:
-
-### Automated:
-
-- used the msw library to mock user and logout endpoints
-- tested the NavBar component:
-  - renders without a problem
-  - renders the link to a user profile for a logged in user
-  - renders the sign in and sign up buttons again on logout
-
-### Manual:
-
-- every other feature tested extensively
-
-## Libraries, contexts and hooks:
-
-- react-infinite-scroll-component
-  - introduced to replace traditional pagination with lazy loading instead of pagination to make the application more performant and seem more snappy/ engaging
-- react-bootstrap:
-  - introduced
-- contexts:
-  - CurrentUserContext exposes the user state to the entire app. Relevant components can subscribe to its changes
-  - ProfileDataContext exposes the profile state to the entire app. Enables the PopularProfiles component to be in sync with the ProfilePage contents
-- custom hooks written to reduce repeatable state logic:
-  - useClickOutsideToggle: enable toggle on the burger menu
-  - useRedirect: enable redirect for users who are either logged in or logged out, depending on the use case
-
   # **Technologies Used - Frontend**
 
 ## Languages
@@ -310,27 +283,17 @@ Each profile also has a follow button inside the stats container so that other u
 
 ## Frameworks & Software
 * [React Bootstrap](https://react-bootstrap.github.io/) - A CSS framework that helps build solid, responsive, mobile-first sites
-* [Balsamiq](https://balsamiq.com/) - Used to create the wireframes
 * [Github](https://github.com/) - Used to host the repository, store the commit history and manage the project board containing user stories and bug reports.
 * [Heroku](https://en.wikipedia.org/wiki/Heroku) - A cloud platform that the application is deployed to.
 * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - Used to test site performance.
-* [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used for responsiveness check across devices.
-* [Favicon](https://favicon.io/) - Used to create the favicon.
+* [Favicon](https://favicon.io/) - Used to create the favicon and website logo.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to debug and test responsiveness.
 * [Cloudinary](https://cloudinary.com/) - A service that hosts image files in the project.
-* [My Free Logo Maker](https://myfreelogomaker.com/explore) - Used to create the Happening brand logo
-* [ColorSpace](https://mycolor.space/?hex=%23081045&sub=1) - Used to create the colour palette
 * [HTML Validation](https://validator.w3.org/) - Used to validate HTML code
 * [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code
 * [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code
 
-## Libraries
-
-* [NPM React-star-rating](https://www.npmjs.com/package/react-simple-star-rating) - A simple react component for adding a star rating to your project.
-
 [Back to top](<#table-of-contents>)
-
-# **Happening**
 
 # Frontend Testing
 
@@ -346,11 +309,11 @@ Each profile also has a follow button inside the stats container so that other u
 
 ## Code Validation 
 
-The Happening site has been passed through the [W3C html Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [ESLint Validator](https://eslint.org/docs/latest/use/getting-started#next-steps).
+The Vibook site has been passed through the [W3C html Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [ESLint Validator](https://eslint.org/docs/latest/use/getting-started#next-steps).
 
 ### W3C HTML Validation Results
 
-No errors were found when the deployed Happening URL was passed through W3C HTML validation checker. Only some lines of info were noted regarding the standard Meta code in the index.html file. 
+No errors were found when the deployed Vibook URL was passed through W3C HTML validation checker. Only some lines of info were noted regarding the standard Meta code in the index.html file. 
 
 ![W3C HTML Validation](images/html-no-errors.jpg)
 
@@ -365,34 +328,6 @@ No errors or warnings were found when the deployed Happening URL was passed thro
 After resolving the errors caused where files, by default, had react imported but not used, only 9 errors regarding the testing files, so I have left these, and subsequently uninstalled ES Lint as it was causing conflicts with the dependency tree. 
 
 ![ES Lint](images/eslint-results.png)
-
-
-## Automatic Testing
-
-The following Jest automatic tests have been written to check that the main frontend components render correctly: 
-
-### NavBar.js
-|  | | |
-|:-------:|:--------|:--------|
-| Renders Navbar Home link| &check; |
-| Renders link to the feed page for a logged in user | &check; |
-| Renders link to the reviews page for a logged in user | &check; |
-
-### NotFound.js
-|  | | |
-|:-------:|:--------|:--------|
-| Go Back to homepage link renders | &check; |
-
-### Avatar.js
-|  | | |
-|:-------:|:--------|:--------|
-| Avatar renders | &check; |
-
-### Event.js
-|  | | |
-|:-------:|:--------|:--------|
-| Renders event component | &check; |
-| Event owner avatar renders | &check; |
 
 ## Manual Testing
 
