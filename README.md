@@ -250,15 +250,11 @@ If the user selects Delete, the post will be removed from all pages and the user
 
 ### Comments
 
-Below the event details is the comments section. If there are no comments yet, the user will see a message telling them that there are no comments. 
+Below the post details is the comments section. If there are no comments yet, the user will see a message telling them that there are no comments. 
 
-If the user is not logged in, they can read any comments that have been posted but they can't post a comment themselves unless they log in. 
+If the user is not logged in, they can read any comments that have been posted but they can't post a comment themselves unless they log in.
 
-![Comments - not logged in](images/comments-none.jpg)
-
-Any comments that have been posted about this event are displayed, regardless of login status. If the user logs in they will see a comment form above the existing comments where they can post their own comments about the event for other users to read. 
-
-![Comments](images/comments.jpg)
+![Comments](./src/assets/readme/comment.png)
 
 * ## Profile Page
 
