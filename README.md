@@ -209,38 +209,19 @@ Each profile avatar can be clicked on to view the full profile page of that user
 
 ### Posts
 
-All events that are created through the Happening sharing platform are displayed on the Homepage. All events created are requested from the API and they are ordered by the created date starting with the most recently posted and working backwards. 
+All posts that are created through the Vibook sharing platform are displayed on the Homepage. All events created are requested from the API and they are ordered by the created date starting with the most recently posted and working backwards. 
+Each post displays the user who shared it and the date it was shared. The post's owner is on the top left, and the date it was shared on the top right.
+Below we find the content itself and at the bottom the like and comment icons and counter,that if cliked allow the user to like or comment the post if it's not the post owner.
+By clicking on the event image, the user is taken to the event details page.
 
-![Event](images/event.jpg)
-
-Each event posting displays the user who shared it and the date it was shared. The event poster is in the center, and underneath are the event details. In bold, you can see the event title and the date it's going to take place. Next is a description of the event, and the tags.
-
-Each event has three counts shown - A count of people interested in the event, a count of people planning on going to the event, and a count of comments users have posted about this event. 
-
-The first two counts work on a toggle system but in addition to this, they are also mutually exclusive. You can click the interested button on and off to make the count go up and down. Equally, you can click the going button on and off to make the count go up and down. However, if you have previoulsy clicked interested, and now you've decided to attend the event, by clicking the going button, the interested count automatically goes down by 1 as the going count goes up by 1. And vice versa. You can't be both interested and going to an event. It must be one or the other. 
-
-By clicking on the event image or the comments count, the user is taken to the event details page.
-
-### Top Upcoming Events
-
-The third component of the events page is the Top Upcoming Events component. In desktop view, this is shown next to the popular profiles and events, and on tablet and mobile devices, this component moves over into the center and is displayed between the popular profiles and the events. 
-
-This component uses two filters: The first filter comes from the API and orders all site events by going count from highest to lowest. Next, I used a Javascript filter on the frontend results to check the event date, and filter out any events where the event_date field is in the past. There is no point continually promoting fantastic events which have already taken place. Finally, on smaller devices I've taken just the top five results so that it fits better on smaller screens. 
-
-If you click on any of the top events listed, you are taken to the event details page.
-
-![Popular Events - Desktop](images/popular-events-desktop.jpg)
-![Popular Events - Mobile](images/popular-events-mobile.jpg)
+![Post](./src/assets/readme/post.png)
 
 ### Search and Filter
 
-If the user wants to search for specific events or an event, they have two ways to achieve this:
+If the user wants to search for specific post, they can do that through the searchbar.
+The user can search all the posts listed by post's title or username who posted it.
 
-1. All events are assigned a category on creation, and so the events list can be filtered by these categories to show only the events in one category selected by the user from the dropdown options. 
-
-2. Search - The user can search all the events listed by event title, username who posted it, event date, or event tags. This search can be used in conjunction with the category filter or independently, but when the site has a lot of shared events, using both search and filter together makes the overall search facility much more efficient. 
-
-![Events Filter](images/search-filter.jpg)
+![Posts Filter](./src/assets/readme/search.png)
 
 * ## Feed
 
