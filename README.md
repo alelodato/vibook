@@ -297,16 +297,6 @@ Each profile also has a follow button inside the stats container so that other u
 
 # Frontend Testing
 
-## Table of Contents
-
-* [**Testing**](<#testing>)
-    * [Code Validation](<#code-validation>)
-    * [Automatic Testing](<#automatic-testing>)
-    * [Manual Testing](<#manual-testing>)
-    * [Responsiveness Testing](<#responsiveness-testing>)
-    * [Lighthouse Testing](<#lighthouse-testing>)
-    * [Known Bugs](<#known-bugs>)
-
 ## Code Validation 
 
 The Vibook site has been passed through the [W3C html Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [ESLint Validator](https://eslint.org/docs/latest/use/getting-started#next-steps).
