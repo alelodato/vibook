@@ -110,23 +110,21 @@ All the models have been set up in a separate DRF repository. Click [here](https
 
 ## Wireframes
 
-The wireframes for the site were created in the software [Balsamiq](https://balsamiq.com). The wireframes have been created principally for desktop devices as this is a browser based platform. However, the wesbite is responsive for tablet and mobile, and I have created additional wireframes to show how the various events pages and profile page adapt to smaller devices. The main grid layout of the components is initially based on the CI Moments walkthrough tutorial as this seems to me the best layout both for wider desktops as for smaller mobile devices for a content sharing platform so I didn't see much reason to change it or find many areas where I could improve on it. Any differences are down to personalised content that fits the project goals.
+The wireframes for the site were created by hand when i was designing the project. The wireframes have been created for desktop and smaller devices as tablets or mobiles. The website layout of the components based on the CI Moments walkthrough tutorial as this seems to me the best layout both for wider desktops as for smaller mobile devices for a content sharing platform so I didn't see much reason to change it or find many areas where I could improve on it.
 
 <details><summary><b>Wireframes</b></summary>
 
-![Events Page](images/events-page.png)
-![Events Detail Page](images/event-detail.png)
-![Events Page - Mobile](images/events-page-mobile.png)
-![Profile Page](images/profile-page.png)
-![Profile Page - Mobile](images/profile-page-mobile.png)
-![Reviews Page](images/reviews-page.png)
-![Reviews Page - Comments](images/review-comments.png)
+![Desktop Homepage Wireframe](./public/readme/desktop-wireframe.jpg)
+![Tablet Homepage Wireframe](./public/readme/tablet-wireframe.jpg)
+![Mobile Homepage Wireframe](./public/readme/mobile-wireframe.jpg)
 
 </details><br/>
 
 ## Detailed page and component breakdown:
 
-![lucidchart](https://res.cloudinary.com/dgjrrvdbl/image/upload/v1649155000/moments-component-map_rfth6q.png)
+The application has the same components as the CI Moment walkthrough project so i used the component breakdown table related to it: 
+
+![lucidchart](./public/readme/components-breakdown.png)
 
 ## Most reused components:
 
