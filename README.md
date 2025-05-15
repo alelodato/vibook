@@ -5,6 +5,10 @@
 
 Vibook is a social media platform. It has been designed for its users to share parties and venues. The application consists of the React app and an API. Welcome to the React front end project section.
 
+[View live website here](https://vibook-557c0bb75197.herokuapp.com/)
+
+![Responsive design](./public/readme/mockup.png)
+
 ## User stories
 
 | Category  | as      | I want to                      | so that I can                                                                                    | UI components                                |
