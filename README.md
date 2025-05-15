@@ -229,33 +229,26 @@ The feed page looks identical to the homepage, but in this page after all the po
 
 ![Feed- No Results](./src/assets/readme/feed-nofound.png)
 
-* ## My Events
+* ## Create a Post
 
-The My Events page looks identical to the homepage, only the Events Posts component changes. On selecting the My Events menu option in the NavBar, you are shown a dropdown with two additional options. Interested or Going. If you select interested, the events posts component will be filtered to only show the events where the logged in user has clicked the interested button. Alternatively, if the user selects the going option from navbar dropdown, the filter changes to only show events where the logged in user has clicked the going button. 
+If you are logged in, you are able to share new posts with the community. By clicking on the Add Post menu option in the Navigation Bar, you are taken to the Share a New Post page, where you can submit the post creation form to the API.
 
-In the original plan for this project, I wanted the My Events page to be a combination of all the events where the user has selected either interested or going on an event. Initially, I tried to set up the backend API and display both these filters at the same time, but I couldn't join the two filterset fields together. I asked among the slack community and others had achieved adding two filters together with an AND command, but nobody seemed to know how to do an OR command. I consulted my mentor further into the project when I had the frontend up and running and he was also unsure how this could be achieved and suggested I just add an additional filter dropdown to toggle between the two for now. 
+All fields are mandatory apart from the post description (which may be understood from the post poster image that is uploaded) and an image must be uploaded for the post to be submitted successfully. Once the form has been submitted successfully, you can see the post published successfully as you are re-directed automatically to the newly created post details page. 
 
-* ## Create an Event
-
-If you are logged in, you are able to share new events with the community. By clicking on the Add Event menu option in the Navigation Bar, you are taken to the Share a New Event page, where you can submit the event creation form to the API.
-
-All fields are mandatory apart from the event description (which may be understood from the event poster image that is uploaded) and an image must be uploaded for the event to be submitted successfully. Once the form has been submitted successfully, you can see the event published successfully as you are re-directed automatically to the newly created event details page. 
-
-Each time you share a new event with the community, your events count goes up on your profile page for other users to see how active you are as an event host. 
-
-![Create an Event](images/event-create.jpg)
+![Create a Post](./src/assets/readme/create-post.png)
 
 * ## Event Detail Page
 
-In the event details page, this simply shows everything relating to one single event. You can reach this page by clicking on an event image in any of the events pages or on the event title in the Top Upcoming Events component and Reviews page. It also shows the popular profiles component and the Top Upcoming Events component for continuity across the pages. If you are the owner of the event, from this page you have the option to edit or delete the event by clicking on the three dots that appear next to the event posted date. 
+The post details page, simply shows everything relating to one single post. You can reach this page by clicking on an post image in any of the pages. It doesn't shows the popular profiles component and if you are the owner of the post, from this page you have the option to edit or delete the event by clicking on the three dots that appear next to the post creation date. 
 
-If you select Edit, you are taken back to the event creation form, but the fields are already pre-populated with the existing event information. You can edit the desired fields and save the changes, which will return you to the event detail page and you can see that the event has been updated successfully. 
+If the user selects Edit, is taken back to the post creation form, but the fields are already pre-populated with the existing information.The desired fields can be edit and the changes saved, which will return to the post detail page where the post updates can be seen.
+If the user selects Delete, the post will be removed from all pages and the user redirected back to the previously visited page.
 
-![Edit an Event](images/event-edit.jpg)
+![Post Detail Page](./src/assets/readme/postdetail.png)
+![Edit or Delete Menu](./src/assets/readme/editordelete.png)
+![Edit a Post](./src/assets/readme/editpost.png)
 
-If you select Delete, a pop-up message appears asking you if you are sure you want to delete this event. This defensive design component allows the user to cancel out of the deletion process if the button was pressed in error. If however, the user wishes to proceed with the deletion they can click confirm and the event will be removed from all pages and the user redirected back to the previously visited page. 
-
-![Delete an Event](images/event-delete.jpg)
+### Comments
 
 Below the event details is the comments section. If there are no comments yet, the user will see a message telling them that there are no comments. 
 
