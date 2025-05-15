@@ -178,11 +178,11 @@ Once the user logs in, additional links become available to select:
 
 Users who are new to the site, or haven't previously created an account can click on the Signup Menu option on the Navigation Bar to create a user account.  I have used the standard dj-rest/auth/registration user account signup process for this. 
 
-![Sign up](images/signup.jpg)
+![Sign up](./src/assets/readme/signup-readme.png)
 
-If a user has a Happening user account, they can click on the Signin menu option in the Navigation Bar to sign into their account.
+If a user has a Vibook user account, they can click on the Signin menu option in the Navigation Bar to sign into their account.
 
-![Sign in](images/signin.jpg)
+![Sign in](./src/assets/readme/signin-readme.png)
 
 If the user wishes to sign out, once signed in, the sign out option becomes visible in the Navigation Bar for them to select. 
 
