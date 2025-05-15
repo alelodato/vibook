@@ -101,7 +101,7 @@ I've been using the kanban board in GitHub to keep track of all the features nee
 
 ### Database Schema
 
-All the models have been set up in a separate DRF repository. Click [here](https://github.com/quiltingcode/events-backend-api) to view the repository or [here](https://happening-api-kelz.herokuapp.com/) to view the deployed API.
+All the models have been set up in a separate DRF repository. Click [here](https://github.com/alelodato/vibook-api) to view the repository or [here](https://vibook-api-259e45270715.herokuapp.com/) to view the deployed API.
 
  
 [Back to top](<#table-of-contents>)
