@@ -248,13 +248,12 @@ If the user selects Delete, the post will be removed from all pages and the user
 ![Edit or Delete Menu](./src/assets/readme/editordelete.png)
 ![Edit a Post](./src/assets/readme/editpost.png)
 
-### Comments
+### Comments and Likes
 
-Below the post details is the comments section. If there are no comments yet, the user will see a message telling them that there are no comments. 
+Below the post details is the comments and likes section. If there are no comments yet, the user will see a message telling them that there are no comments. If there are no likes yet, the likes counter will be on 0. 
+If the user is not logged in, they can read any comments that have been posted and see the post's likes counter but they can't post a comment or like a post themselves unless they log in.
 
-If the user is not logged in, they can read any comments that have been posted but they can't post a comment themselves unless they log in.
-
-![Comments](./src/assets/readme/comment.png)
+![Comments and Likes](./src/assets/readme/comment.png)
 
 * ## Profile Page
 
@@ -272,43 +271,6 @@ Each profile also has a follow button inside the stats container so that other u
 
 ![Porfile Page](./src/assets/readme/profilepage.png)
 ![Profile Edit](./src/assets/readme/editprofile.png)
-
-* ## Reusable React Components
-
-### Three Dots Edit Delete Dropdown Menu
-
-Based on the Moments walkthrough project 'MoreDropdown' component, I have utilised the same idea in my project but extended it's use even further to be accessed when editing or deleting events, comments and also reviews. In addition to this re-usable component which I learnt from the course tutorials, I also developed four more custom re-usable components specifically for my project.
-
-### Delete Confirmation Component
-
-In order to improve defensive design, I wanted to add a validation check before data gets deleted from the site. For this reason, I have developed a modal pop-up component which double checks whether the user wants to continue with their choice, after having clicked the delete button from the EditDeleteDropdown component on an event, a comment or a review. This component checks what type of data the user is trying to delete, and customises the modal message appropriately. On clicking the 'Confirm Deletion' button the corresponding handleDelete function is called, and the data is removed from the site
-
-![Delete Event](images/delete-event.jpg)
-![Delete Comment](images/delete-comment.jpg)
-![Delete Review](images/delete-review.jpg)
-
-### Date Formatter Component
-
-Originally, I tried to format the event event_date field on the backend, but it caused all sorts of error messages and I couldn't quite get it to work correctly. Having consulted tutor support, they told me that it was also possible to leave the date format on the backend and just format it where necessary on the frontend. There are three areas in this site where event_date is published; in the event posting, in the top upcoming events component, and in the review listings. 
-
-When I tried requesting the event_date from the API in a formatted form, it came through OK, similar to how the created_at date is formatted in the backend, but then when it came to pre-populating it back into an edit form, it wouldn't go back correctly into the date field. I therefore decided to leave the date format for all the API requests in it's original format, and just created a re-usable function - 'DateFormatter.js' to make it appear nicely for the front end user to view. 
-
-![Date Unformatted](images/date-before.jpg)
-![Date Formatted](images/date-after.jpg)
-
-### Alert Component
-
-As stated previously, there is no way for the user to check whether the message form has been submitted correctly or not, as the user doesn't have access to other user's inbox. I therefore wanted to set up a bootstrap success alert. Initially I created this as a single function inside the MessageCreateForm.js component. In a later sprint, when I was developing the reply feature, I decided to create a re-usable Alert component which could be used interchangeably between the send message and reply message forms. I refactored the code inside the MessageCreateForm component and imported the newly created AlertMessage component into the ReplyMessageForm.js component as well. In future development, I can extend this functionality to show user alerts in more areas of the site. 
-
-### Scroll to Top Component
-
-With the infinite scroll functionality in place, once there are a lot of events posted to the site, and the user scrolls a long way down looking at posts, once they want to return to the navbar options, it takes a long time to manually scroll all the way back up again, harming user experience.  For this reason, I have implemented a button which appears once the user has scrolled down more than 1000px ( appears after viewing the first post) and remains fixed to the bottom of the screen for when the user wants to return to the navbar menu at the top. 
-
-Initially I implemented a simple button at the bottom of the events pages screen which takes the user back to the top of the window. However, in this scenario the user has to scroll through all events to reach the button. Looking at an article from [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) I added CSS to fix the button to the bottom of the page, and a function to keep the button hidden until the user has scrolled down more than 1000px. I moved this function into a re-usable hook component, which I then imported into the Profile Page and the Reviews page as well. 
-
-![Back to the Top Button](images/scroll-button.jpg)
-
-[Back to top](<#table-of-contents>)
 
 ## Tests:
 
