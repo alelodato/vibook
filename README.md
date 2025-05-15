@@ -7,7 +7,7 @@ Vibook is a social media platform. It has been designed for its users to share p
 
 [View live website here](https://vibook-557c0bb75197.herokuapp.com/)
 
-![Responsive design](./public/readme/mockup.png)
+![Responsive design](./src/assets/readme/mockup.png)
 
 ## Table of Contents
 
@@ -114,9 +114,9 @@ The wireframes for the site were created by hand when i was designing the projec
 
 <details><summary><b>Wireframes</b></summary>
 
-![Desktop Homepage Wireframe](./public/readme/desktop-wireframe.jpg)
-![Tablet Homepage Wireframe](./public/readme/tablet-wireframe.jpg)
-![Mobile Homepage Wireframe](./public/readme/mobile-wireframe.jpg)
+![Desktop Homepage Wireframe](./src/assets/readme/desktop-wireframe.jpg)
+![Tablet Homepage Wireframe](./src/assets/readme/tablet-wireframe.jpg)
+![Mobile Homepage Wireframe](./src/assets/readme/mobile-wireframe.jpg)
 
 </details><br/>
 
@@ -124,7 +124,7 @@ The wireframes for the site were created by hand when i was designing the projec
 
 The application has the same components as the CI Moment walkthrough project so i used the component breakdown table related to it: 
 
-![lucidchart](./public/readme/components-breakdown.png)
+![lucidchart](./src/assets/readme/components-breakdown.png)
 
 ## Site Structure
 
@@ -136,7 +136,7 @@ Vibook structure is split up in two parts: when the user is logged out and when 
 
 When deciding on the colour scheme for my site, I looked at other content sharing platforms such as Facebook, Instagram and Eventbrite for inspiration. All of these use a very neutral color scheme with barely any background colour at all, and then just hints of brand color here and there to let the buttons stand out. In order to follow a similar approach, I chose a very neutral background color and then complimentary orange and black tones for the icons and buttons. 
 
-![Colour Palette](./public/readme/palette.png)
+![Colour Palette](./src/assets/readme/palette.png)
 
 * ### Typography
 
@@ -150,27 +150,29 @@ The main font used for the site is 'Sour Gummy' Sans-Serif. This font is nice an
 
 * ## Navigation
 
-The navigation bar is very clean and straight forward. Depending on whether you are logged in or not, different menus are visible for the site user. For tablet and mobile devices, the navigation bar menu turns into a hamburger dropdown list. 
+The navigation bar is very clean and straight forward. Depending on whether you are logged in or not, different menus are visible for the site user. For tablet and mobile devices, the navigation bar menu turns into a burger dropdown list. 
 
 On accessing the site for the first time, the user is logged out and the following menu items are visible:
 
-* Happening Logo - On the far left hand side of the navigatin bar is the Happening brand logo. This is visible throughout the site to all user types and contains a link back to the homepage. 
-* Home - the first menu item, and the initial default start page, is 'Home', where all events shared among the community are displayed. 
-* Authentication - Next is a dropdown menu in the form of a profile icon. Within this dropdown the user has the options to Signin or Signup which takes them to the respective page. 
+* Vibook Logo - On the far left hand side of the navigatin bar is the Vibook brand logo. This is visible throughout the site to all user types and contains a link back to the homepage. The logo is very minimal, just showing a "V" on a red background, and it was made on the [Favicon](https://favicon.io/) website.
 
-![Logged out Navbar](images/navbar-loggedout.jpg)
-![Logged out Navbar Mobile](images/navbar-loggedout-mobile.jpg)
+* Home - the first menu item, and the initial default start page, is 'Home', where all posts shared among the community are displayed. 
+
+* Authentication - Two icons next to the homepage one, where the user has the options to Signin or Signup which takes them to the respective page. 
+
+![Logged out Navbar](./src/assets/readme/signedout-navbar.png)
+![Logged out Navbar Mobile](./src/assets/readme/signedout-navbar-mobile.png)
 
 Once the user logs in, additional links become available to select:
 
-* Feed - Logged in users can access the feed page where they can see events of other profiles they follow.
-* My Events - Logged in users can access the My Events dropdown menu where they can view either all the events where they have clicked 'interested' or all the events where they have clicked 'going'.
-* Reviews - Logged in users can go to the reviews page and read reviews about events
-* Authentication - The icons within the authentication change once a user has logged in, and now display a link to the user's own profile page or a link to sign out of the site. 
-* Add Event - Logged in users can access the event creation page to share their own events to the site. 
+* Feed - Logged in users can access the feed page where they can see posts of other profiles they follow.
 
-![Logged in Navbar](images/navbar-loggedin.jpg)
-![Logged in Navbar Mobile](images/navbar-loggedin-mobile.jpg)
+* Authentication - The icons within the authentication change once a user has logged in, and now display a link to the user's own profile page or a link to sign out of the site.
+
+* Add Post - Logged in users can access the post creation page to share their own content to the site. 
+
+![Logged in Navbar](./src/assets/readme/signedin-navbar.png)
+![Logged in Navbar Mobile](./src/assets/readme/signedin-navbar-mobile.png)
 
 ## Authentication
 
