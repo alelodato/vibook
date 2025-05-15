@@ -200,16 +200,14 @@ The popular profiles component is a permanent feature across the entire site. It
 
 If the user isn't logged in, they can see avatar, and the username of the top 6 most popular profiles, and if the user is logged in, they will also see a button enabling them to follow or unfollow the profile. 
 
-![Popular Profiles - logged out]()
-![Popular Profiles - logged in]()
+![Popular Profiles - logged out](./src/assets/readme/popular-signedout.png)
+![Popular Profiles - logged in](./src/assets/readme/popular-signedin.png)
 
-If the follow button is greyed out, it is because your own profile has made it to the top 6 most popular profiles list, but you are not allowed to follow yourself. Originally, it was simply the case that no button appeared under your own profile but aesthetically, this didn't look good and the component didn't look balanced, so I decided to put an inactive button with a tooltip there instead. 
-
-![Popular Profiles - own profile](images/popular-profiles-followyourself.jpg)
+If the follow button is not showing, it is because your own profile has made it to the top 6 most popular profiles list, but you are not allowed to follow yourself. 
 
 Each profile avatar can be clicked on to view the full profile page of that user. 
 
-### Events Posts
+### Posts
 
 All events that are created through the Happening sharing platform are displayed on the Homepage. All events created are requested from the API and they are ordered by the created date starting with the most recently posted and working backwards. 
 
