@@ -84,14 +84,14 @@ I've been using the kanban board in GitHub to keep track of all the features nee
 | auth      | user    | register for an account        | follow users                                                                                     | Profile<br>ProfilePage                       |
 | posts     | visitor | view a list of posts           | browse the most recent uploads                                                                   | PostsPage                                    |
 | posts     | visitor | view an individual post        | see user feedback, i.e. likes and read comments                                                  | Post<br>PostPaget                            |
-| posts     | visitor | search a list of posts         | find a post by a specific artist or a title                                                      | PostsPage                                    |
+| posts     | visitor | search a list of posts         | find a post by a specific venue or a title                                                      | PostsPage                                    |
 | posts     | visitor | scroll through a list of posts | browse the site more comfortably                                                                 | InfiniteScrollComponent                      |
 | posts     | user    | edit and delete my post        | correct or hide any mistakes                                                                     | PostEditForm<br>MoreDropdownMenu             |
-| posts     | user    | create a post                  | share my moments with others                                                                     | PostCreateForm                               |
+| posts     | user    | create a post                  | share my content with others                                                                     | PostCreateForm                               |
 | posts     | user    | view liked posts               | go back often to my favourite posts                                                              | PostsPage                                    |
-| posts     | user    | view followed users' posts     | keep up with my favourite users' moments                                                         | PostsPage                                    |
-| likes     | user    | like a post                    | express my interest in someone's shared moment                                                   | Post like icon                               |
-| likes     | user    | unlike a post                  | express that my interest in someone's shared moment has faded away                               | Post (un) like icon                          |
+| posts     | user    | view followed users' posts     | keep up with my favourite users' content                                                        | PostsPage                                    |
+| likes     | user    | like a post                    | express my interest in someone's shared content                                                   | Post like icon                               |
+| likes     | user    | unlike a post                  | express that my interest in someone's shared content has faded away                               | Post (un) like icon                          |
 | comments  | user    | create a comment               | share my thoughts on other people's content                                                      | PostPage<br>CommentCreateForm                |
 | comments  | user    | edit and delete my comment     | correct or hide any mistakes                                                                     | PostPage<br>Comment<br>MoreDropdownMenu      |
 | profiles  | user    | view a profile                 | see a user's recent posts + post, followers, following count data                                | ProfilePage<br>Post                          |
