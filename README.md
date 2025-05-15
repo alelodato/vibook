@@ -225,9 +225,9 @@ The user can search all the posts listed by post's title or username who posted 
 
 * ## Feed
 
-The feed page looks identical to the homepage, only the Events Posts component changes. In this page all the events are requested from the API, but then a filter is used to only show events posted by profiles that the currently logged in user is following. For this reason, this page doesn't work if the user is not logged in. Equally, if the user isn't following any other profiles, no events will be displayed and a 'No Results found' message will appear instead inside the events posts component. 
+The feed page looks identical to the homepage, but in this page after all the posts are requested from the API, a filter is used to only show posts by profiles that the currently logged in user is following. For this reason, this page doesn't work and cannot be accessed if the user is not logged in. Equally, if the user isn't following any other profiles, no events will be displayed and a 'No Results found' message will appear instead inside the events posts component. 
 
-![Feed- No Results](images/no-results.jpg)
+![Feed- No Results](./src/assets/readme/feed-nofound.png)
 
 * ## My Events
 
