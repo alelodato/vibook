@@ -9,6 +9,45 @@ Vibook is a social media platform. It has been designed for its users to share p
 
 ![Responsive design](./public/readme/mockup.png)
 
+## Table of Contents
+
+- [Project](<#project>)
+    * [Objective](<#objective>)
+    * [Site Users Goal](<#site-users-goal>)
+    * [Site Owners Goal](<#site-owners-goal>)
+    * [Project Management](<#project-management>)
+
+- [User Experience (UX)](<#user-experience-ux>)
+    * [Wireframes](<#wireframes>)
+    * [User Stories](<#user-stories>)
+    * [Site Structure](<#site-structure>)
+    * [Design Choices](<#design-choices>)
+
+- [Existing Features](#features)
+  * [Navigation](#navigation)
+  * [Authentication](#authentication)
+  * [Homepage](#homepage)
+  * [Feed](#feed)
+  * [My Events](#my-events)
+  * [Create an Event](#create-an-event)
+  * [Event Detail Page](#event-detail-page)
+  * [Reviews](#reviews)
+  * [Profile Page](#profile-page)
+  * [Contact](#contact)
+  * [Reusable React Components](#reusable-react-components)
+
+- [Features Left To Implement](<#features-left-to-implement>)
+
+- [Technologies Used](<#technologies-used>)
+    * [Languages](<#languages>)
+    * [Frameworks & Software](<#frameworks--software>)
+    * [Libraries](<#libraries>)
+- [Agile Workflow](#agile-workflow)
+  * [Github Project Board](#github-project-board)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 ## User stories
 
 | Category  | as      | I want to                      | so that I can                                                                                    | UI components                                |
