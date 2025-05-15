@@ -128,21 +128,21 @@ The application has the same components as the CI Moment walkthrough project so 
 
 ## Site Structure
 
-Happening is split up in two parts: when the user is logged out and when the user is logged in. Depending on login status different pages are available for the user. When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. When the user is logged in Feed, Signout and Profile Page also become available. 
+Vibook structure is split up in two parts: when the user is logged out and when the user is logged in. Depending on login status different pages are available for the user. When the user is logged out the pages: Home, and Sign In or Up are available from the Navigation Bar menu. When the user is logged in Feed, Signout and Profile Page also become available.
 
 ## Design Choices
 
 * ### Color Scheme
 
-When deciding on the colour scheme for my site, I looked at other content sharing platforms such as Facebook, Instagram and Eventbrite for inspiration. All of these use a very neutral color scheme with barely any background colour at all, and then just hints of brand color here and there to let the buttons stand out. In order to follow a similar approach, I chose a very neutral background color and then complimentary pink and purple tones for the icons and buttons. 
+When deciding on the colour scheme for my site, I looked at other content sharing platforms such as Facebook, Instagram and Eventbrite for inspiration. All of these use a very neutral color scheme with barely any background colour at all, and then just hints of brand color here and there to let the buttons stand out. In order to follow a similar approach, I chose a very neutral background color and then complimentary orange and black tones for the icons and buttons. 
 
-![Colour Palette](images/color-palette.png)
+![Colour Palette](./public/readme/palette.png)
 
 * ### Typography
 
-The main font used for the site is 'Montserrat' with a fallback font of Sans-Serif just in case it doesn't load. This font is nice and clear to read even though the platform in general is not text-heavy. 
+The main font used for the site is 'Sour Gummy' Sans-Serif. This font is nice and clear to read even though the platform in general is not text-heavy. 
 
-![Typography](images/typography.jpg)
+[Sour Gummy Font](https://fonts.google.com/specimen/Sour+Gummy?categoryFilters=Feeling:%2FExpressive%2FHappy)
 
 [Back to top](<#table-of-contents>)
 
