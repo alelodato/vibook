@@ -18,7 +18,7 @@ import NotFound from "./components/NotFound";
 
 function App() {
   const currentUser = useCurrentUser();
-  const profile_id = currentUser ?.profile_id || "";
+  const profile_id = currentUser?.profile_id || "";
 
   return (
     <div className={styles.App}>
