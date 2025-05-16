@@ -537,12 +537,12 @@ Once you have created a new gitpod workspace and set up the new project, you are
 Once you have set up the workspace and done a basic deploy to Heroku, you can connect the react workspace to your API, in order to send data to the API
 
 1. In the Heroku dashboard, go into the API application settings
-2. In 'Settings' add a new Config Var called 'CLIENT_ORIGIN' and set that to the URL for your deployed React application. In my case, this would be [https://happening-react.herokuapp.com](https://happening-react.herokuapp.com).
+2. In 'Settings' add a new Config Var called 'CLIENT_ORIGIN' and set that to the URL for your deployed React application. In my case, this would be [https://vibook-557c0bb75197.herokuapp.com/](https://vibook-557c0bb75197.herokuapp.com/).
 3. Then add another Config Var called 'CLIENT_ORIGIN_DEV' and enter the URL of your Gitpod preview link, remembering to remove the trailing slash at the end. Gitpod occasionally changes this URL so keep an eye on it, as you are working on your project. 
 4. Go back into your frontend Gitpod workspace, and install the Axios library using the command 'npm install axios'.
 5. Create a folder called 'API' and inside it create a file called 'axiosDefaults'.
 6. import axios at the top of the file
-7. Define your baseURL which is the unique URL of your deployed API project. In my case this would be [https://happening-api-kelz.herokuapp.com/](https://happening-api-kelz.herokuapp.com/)
+7. Define your baseURL which is the unique URL of your deployed API project. In my case this would be [https://vibook-api-259e45270715.herokuapp.com/](https://vibook-api-259e45270715.herokuapp.com/)
 8. Set the content-type header to multi-part/form-data as the API will need to deal with images as well as text in it's requests.
 9. In order to avoid any CORS issues, set withCredentials to True.
 10. Import this file into App.js to be used across all pages
