@@ -315,9 +315,8 @@ No errors or warnings were found when the deployed Happening URL was passed thro
 
 ### ESLint Validation Results
 
-After resolving the errors caused where files, by default, had react imported but not used, only 9 errors regarding the testing files, so I have left these, and subsequently uninstalled ES Lint as it was causing conflicts with the dependency tree. 
-
-![ES Lint]()
+I installed Eslint to validate the application's React JSX code with the command "npm init @eslint/config@latest"
+, and then i ran it to validate the code of the src directory with the command "npx eslint src" and no errors where shown in the terminal.
 
 ## Manual Testing
 
@@ -517,6 +516,7 @@ Google Lighthouse in Chrome Developer Tools was used to test the application wit
 
 ## Known Bugs
 
+No bugs known in this application.
 
 [Back to top](<#table-of-contents>)
 
@@ -539,7 +539,7 @@ Once you have set up the workspace and done a basic deploy to Heroku, you can co
 1. In the Heroku dashboard, go into the API application settings
 2. In 'Settings' add a new Config Var called 'CLIENT_ORIGIN' and set that to the URL for your deployed React application. In my case, this would be [https://vibook-557c0bb75197.herokuapp.com/](https://vibook-557c0bb75197.herokuapp.com/).
 3. Then add another Config Var called 'CLIENT_ORIGIN_DEV' and enter the URL of your Gitpod preview link, remembering to remove the trailing slash at the end. Gitpod occasionally changes this URL so keep an eye on it, as you are working on your project. 
-4. Go back into your frontend Gitpod workspace, and install the Axios library using the command 'npm install axios'.
+4. Go back into your frontend vsCode or Gitpod workspace, and install the Axios library using the command 'npm install axios'.
 5. Create a folder called 'API' and inside it create a file called 'axiosDefaults'.
 6. import axios at the top of the file
 7. Define your baseURL which is the unique URL of your deployed API project. In my case this would be [https://vibook-api-259e45270715.herokuapp.com/](https://vibook-api-259e45270715.herokuapp.com/)
