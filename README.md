@@ -513,11 +513,7 @@ Happening was tested on the following browsers:
 
 Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. The testing showed the following:
 
-![Lighthouse Homepage Result]()
-
-### Peer Review
-
-In addition to the above tests, I asked my peers to create a profile and interact with the site and their overall response was very positive and that this platform is something they would love to use on a day to day basis.
+![Lighthouse Homepage Result](./src/assets/readme/lighthouse-testing.png)
 
 ## Known Bugs
 
