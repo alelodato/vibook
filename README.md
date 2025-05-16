@@ -28,10 +28,6 @@ Vibook is a social media platform. It has been designed for its users to share p
   * [Authentication](#authentication)
   * [Homepage](#homepage)
   * [Feed](#feed)
-  * [My Events](#my-events)
-  * [Create an Event](#create-an-event)
-  * [Event Detail Page](#event-detail-page)
-  * [Reviews](#reviews)
   * [Profile Page](#profile-page)
   * [Contact](#contact)
   * [Reusable React Components](#reusable-react-components)
@@ -98,6 +94,8 @@ I've been using the kanban board in GitHub to keep track of all the features nee
 | profiles  | user    | edit a profile                 | update my profile information                                                                    | ProfileEditForm                              |
 | followers | user    | follow a profile               | express my interest in someone's content                                                         | Profile follow button                        |
 | followers | user    | unfollow a profile             | express that my interest in someone's content has faded away and remove their posts from my feed | Profile (un) follow button                   |
+| contact | user   | view messages in my profile page  | I can read messages other users have sent me         |
+| contact | user   | send a message to another user    | I can ask a question about an event they are hosting |
 
 ### Database Schema
 
@@ -237,9 +235,9 @@ All fields are mandatory apart from the post description (which may be understoo
 
 ![Create a Post](./src/assets/readme/create-post.png)
 
-* ## Event Detail Page
+* ## Post Detail Page
 
-The post details page, simply shows everything relating to one single post. You can reach this page by clicking on an post image in any of the pages. It doesn't shows the popular profiles component and if you are the owner of the post, from this page you have the option to edit or delete the event by clicking on the three dots that appear next to the post creation date. 
+The post details page, simply shows everything relating to one single post. You can reach this page by clicking on an post image in any of the pages. It doesn't shows the popular profiles component and if you are the owner of the post, from this page you have the option to edit or delete the post by clicking on the three dots that appear next to the post creation date. 
 
 If the user selects Edit, is taken back to the post creation form, but the fields are already pre-populated with the existing information.The desired fields can be edit and the changes saved, which will return to the post detail page where the post updates can be seen.
 If the user selects Delete, the post will be removed from all pages and the user redirected back to the previously visited page.
