@@ -10,6 +10,8 @@ import styles from "../../styles/ProfilePage.module.css";
 import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 
+import MessageCreateForm from "../messages/MessageCreateForm";
+import Message from "../messages/Message";
 import PopularProfiles from "./PopularProfiles";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { useParams } from "react-router";
@@ -38,19 +40,25 @@ function ProfilePage() {
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner;
 
+  const [profileMessages, setProfileMessages] = useState({results: []});
+
+  const [isMounted] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [{ data: pageProfile }, { data: profilePosts }] =
+        const [{ data: pageProfile }, { data: profilePosts }, {data: profileMessages}] =
           await Promise.all([
             axiosReq.get(`/profiles/${id}/`),
             axiosReq.get(`/posts/?owner__profile=${id}`),
+            axiosReq.get(`/contact/?profile=${id}`),
+
           ]);
         setProfileData((prevState) => ({
           ...prevState,
           pageProfile: { results: [pageProfile] },
         }));
         setProfilePosts(profilePosts);
+        setProfileMessages(profileMessages);
         setHasLoaded(true);
       } catch (err) {
         //console.log(err);
@@ -134,11 +142,44 @@ function ProfilePage() {
       )}
     </>
   );
+    const mainProfileMessages = (
+    <>
+      <Container className={`${appStyles.Content} ${styles.Messages}`}>
+        <h3 className="text-center">Messages</h3>
+        {profileMessages.results.length ? (
+          <InfiniteScroll
+          children={
+            profileMessages.results.map((message) => (
+              <Message key={message.id}{...message} />
+            ))}
+          dataLength={profileMessages.results.length}
+          loader={<Asset spinner />}
+          hasMore={!!profileMessages.next}
+          next={() => fetchMoreData(profileMessages, setProfileMessages)}
+          />
+        ) : (
+          <Asset message={`no messages yet...`} />
+        )}
+      </Container>
+    </>
+  );
 
   return (
     <Row>
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
+        {currentUser && !is_owner && (
+          <MessageCreateForm mobile sendToProfile={profile?.owner} />
+        )}
+        {currentUser &&
+            is_owner &&
+            (hasLoaded ? (
+              <Container className="d-lg-none mb-3">
+                {mainProfileMessages}
+              </Container>
+            ) : (
+              <Asset spinner />
+            ))}
         <Container className={appStyles.Content}>
           {hasLoaded ? (
             <>
@@ -151,8 +192,25 @@ function ProfilePage() {
         </Container>
       </Col>
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
-        <PopularProfiles />
-      </Col>
+          {currentUser && !is_owner && (
+            <MessageCreateForm
+              sendToProfile={profile?.owner}
+              profileId={profile?.id}
+            />
+          )}
+
+          {currentUser &&
+            is_owner &&
+            (hasLoaded ? (
+              <Container className="d-none d-lg-block">
+                {mainProfileMessages}
+              </Container>
+            ) : (
+              <Asset spinner />
+            ))}
+
+          {!currentUser && (isMounted ? <PopularProfiles /> : <Asset spinner />)}
+        </Col>
     </Row>
   );
 }

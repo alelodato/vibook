@@ -10,7 +10,6 @@ import appStyles from '../../App.module.css'
 import btnStyles from '../../styles/Button.module.css'
 // Component imports
 import { axiosRes } from '../../api/axiosDefaults';
-import AlertMessage from '../../components/AlertMessage';
 
 const MessageCreateForm = (props) => {
 
@@ -18,11 +17,6 @@ const MessageCreateForm = (props) => {
 
     const [message, setMessage] = useState("");
     const [errors, setErrors] = useState({});
-
-    // Variables to display success alert when message is sent successfully
-    const [variant, setVariant] = useState("");
-    const [alertMessage, setAlertMessage] = useState("");
-    const [showAlert, setShowAlert] = useState(false);
 
     const handleChange = (event) => {
         setMessage(event.target.value);
@@ -37,9 +31,6 @@ const MessageCreateForm = (props) => {
         try {
           await axiosRes.post('/contact/', formData);
           setMessage("")
-          setShowAlert(true)
-          setVariant("success")
-          setAlertMessage("Your message has been sent successfully")
 
         } catch (err) {
           // console.log(err)
@@ -80,7 +71,6 @@ const MessageCreateForm = (props) => {
           Send
         </Button>
       </Form>
-      <AlertMessage showAlert={showAlert} setShowAlert variant={variant} alertMessage={alertMessage}/>
 
     </Container>
   );
