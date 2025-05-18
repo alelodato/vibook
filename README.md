@@ -311,7 +311,7 @@ For the time being, there is no alert system in place to send a notification to 
 * [Cloudinary](https://cloudinary.com/) - A service that hosts image files in the project.
 * [HTML Validation](https://validator.w3.org/) - Used to validate HTML code
 * [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code
-* [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code
+* [ESLint Validation](https://eslint.org/) - Used to validate React's JSX code
 
 [Back to top](<#table-of-contents>)
 
