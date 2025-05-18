@@ -95,7 +95,7 @@ I've been using the kanban board in GitHub to keep track of all the features nee
 | followers | user    | follow a profile               | express my interest in someone's content                                                         | Profile follow button                        |
 | followers | user    | unfollow a profile             | express that my interest in someone's content has faded away and remove their posts from my feed | Profile (un) follow button                   |
 | contact | user   | view messages in my profile page  | I can read messages other users have sent me         |
-| contact | user   | send a message to another user    | I can ask a question about an event they are hosting |
+| contact | user   | send a message to another user    | I can ask a question about an event they are hosting or a venue i would like to visit|
 
 ### Database Schema
 
@@ -270,7 +270,27 @@ Each profile also has a follow button inside the stats container so that other u
 ![Porfile Page](./src/assets/readme/profilepage.png)
 ![Profile Edit](./src/assets/readme/editprofile.png)
 
-  # **Technologies Used - Frontend**
+* ## Messages
+
+If a logged in user is viewing his own profile page the messaging component will display his own private message inbox, on the top right of the page below the navbar, replacing the popular profiles section. Other users will not be able to see the messages that have not been sent to them. All messages that have been sent to the profile's owner, are displayed in descending order of when they were sent. Are also displayed the avatar and the username of the sender, the date the message was sent, and the message itself. Each message has a 'reply' button if the user wants to send a reply message back to the sender. 
+
+![Received Messages](./src/assets/readme/messagelist.png)
+
+If a user is viewing someone else's profile, the message component contains a form to write a message and send it to the owner of the profile page you are viewing. 
+
+![Create Message](./src/assets/readme/messageform.png)
+
+Unlike with other forms such as creating an post or comment, where you can see the published content once the form has been posted successfully, the user does not have access to other user's inboxes to check whether the message has been sent successfully or not. For this reason, in the case of the messaging component, I have set up an alert system using Bootstrap alerts, to display a success alert message when a message or a reply message have been sent successfully. This adds to good user experience, and user peace of mind. 
+
+![Message Alert](./src/assets/readme/messagesuccess.png)
+
+Equally, if the user tries to send a blank message, they will see a Bootstrap warning message telling them that they must fill in the message field in order to send the message successfully. 
+
+![Message Alert](./src/assets/readme/messageerror.png)
+
+For the time being, there is no alert system in place to send a notification to a user when they receive a new message, but this is something I would like to look into in future development sprints.
+
+# **Technologies Used - Frontend**
 
 ## Languages
 
