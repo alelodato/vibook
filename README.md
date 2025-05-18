@@ -16,10 +16,11 @@ Vibook is a social media platform. It has been designed for its users to share p
     * [Site Users Goal](<#site-users-goal>)
     * [Site Owners Goal](<#site-owners-goal>)
     * [Project Management](<#project-management>)
+    * [Github Project Board](#github-project-board)
+    * [User Stories](<#user-stories>)
 
 - [User Experience (UX)](<#user-experience-ux>)
     * [Wireframes](<#wireframes>)
-    * [User Stories](<#user-stories>)
     * [Site Structure](<#site-structure>)
     * [Design Choices](<#design-choices>)
 
@@ -30,17 +31,18 @@ Vibook is a social media platform. It has been designed for its users to share p
   * [Feed](#feed)
   * [Profile Page](#profile-page)
   * [Contact](#contact)
-  * [Reusable React Components](#reusable-react-components)
-
-- [Features Left To Implement](<#features-left-to-implement>)
 
 - [Technologies Used](<#technologies-used>)
     * [Languages](<#languages>)
     * [Frameworks & Software](<#frameworks--software>)
     * [Libraries](<#libraries>)
-- [Agile Workflow](#agile-workflow)
-  * [Github Project Board](#github-project-board)
-- [Testing](#testing)
+* [**Testing**](<#testing>)
+    * [Code Validation](<#code-validation>)
+    * [Automatic Testing](<#automatic-testing>)
+    * [Manual Testing](<#manual-testing>)
+    * [Responsiveness Testing](<#responsiveness-testing>)
+    * [Lighthouse Testing](<#lighthouse-testing>)
+    * [Known Bugs](<#known-bugs>)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -94,8 +96,8 @@ I've been using the kanban board in GitHub to keep track of all the features nee
 | profiles  | user    | edit a profile                 | update my profile information                                                                    | ProfileEditForm                              |
 | followers | user    | follow a profile               | express my interest in someone's content                                                         | Profile follow button                        |
 | followers | user    | unfollow a profile             | express that my interest in someone's content has faded away and remove their posts from my feed | Profile (un) follow button                   |
-| contact | user   | view messages in my profile page  | I can read messages other users have sent me         |
-| contact | user   | send a message to another user    | I can ask a question about an event they are hosting or a venue i would like to visit|
+| contact | user   | view messages in my profile page  | I can read messages other users have sent me         | ProfilePage<br>Message
+| contact | user   | send a message to another user    | I can ask a question about an event they are hosting or a venue i would like to visit| ProfilePage<br>MessageCreateForm<br>MessageReplyForm
 
 ### Database Schema
 
@@ -313,7 +315,7 @@ For the time being, there is no alert system in place to send a notification to 
 
 [Back to top](<#table-of-contents>)
 
-# Frontend Testing
+# Testing
 
 ## Code Validation 
 
@@ -534,7 +536,8 @@ Google Lighthouse in Chrome Developer Tools was used to test the application wit
 
 ## Known Bugs
 
-No bugs known in this application.
+When i tested the application on mobile devices i coudn't sign in and the page was redirecting me to the google search page on chrome and safari.
+This is a known issue with React projects, particularly when we have the separate front and backends,there are some issues with login on mobile and/or iPhones, even though the application work well and there are no bugs when running it on desktop.
 
 [Back to top](<#table-of-contents>)
 
@@ -542,7 +545,7 @@ No bugs known in this application.
 
 ### Deployment to Heroku
 
-Once you have created a new gitpod workspace and set up the new project, you are ready to deploy to Heroku. 
+Once you have created a new vsCode or gitpod workspace and set up the new project, you are ready to deploy to Heroku. 
 
 1. In your heroku account, select Create New App, and give it a unique name related to your project. 
 2. Select a region corresponding to where you live and click 'Create App'.
@@ -574,6 +577,10 @@ It is possible to make an independent copy of a GitHub Repository by forking the
 ### Clone this Project Repository
 
 A Git clone creates a linked copy of the project that will continue to synchronize with the original repository. In order to create a clone, you can click on the 'Code' button inside the selected repository and then select the 'Clone' option from the dropdown list.
+
+# Credit
+
+For this project i want to thank the Code Institute tutoring team for helping me with debugging, fixing issues in my project and always giving precious advices to help me improve my coding and use of best practices.
 
 [Back to top](<#table-of-contents>)
 
